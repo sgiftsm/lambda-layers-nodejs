@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+
+Resources:
+    UuidLayer:
+      Type: AWS::Serverless::LayerVersion
+      Properties:
+        LayerName: Sam-Layers-Uuid
+        Description: Layer that contains one version of UUID library
+        LicenseInfo: 'Available under the MIT license.'
+        ContentUri: ./uuid-layer
+        CompatibleRuntimes:
+          - nodejs14.x
