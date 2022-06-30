@@ -10,4 +10,4 @@ Resources:
         LicenseInfo: 'Available under the MIT license.'
         ContentUri: ./uuid-layer
         CompatibleRuntimes:
-          - nodejs14.x
+          - nodejs12.x
